@@ -27,12 +27,13 @@ LongestMatch(Point start, Point end, List<List<Point>> array)
     LongestMatch(start, end, array)
     
 getTraversal(start, end, translatePoint, traversalPath)
-  nextPoint = start.translate(translatePoint)
-  if(nextPoint were not out of boundary)
-    if(the value of nextPoint of array was '1')
-      add the current point to the traversalPath
-      recursive to did getTraversal(nextPoint, end, translatePoint, traversalPath)
-  return the traversalPath
+    
+    nextPoint = start.translate(translatePoint)
+    if(nextPoint were not out of boundary)
+        if(the value of nextPoint of array was '1')
+        add the current point to the traversalPath
+        recursive to did getTraversal(nextPoint, end, translatePoint, traversalPath)
+    return the traversalPath
   
 Finally, if we consider all the possible edge cases once we complete all the coding work, it will works as we hope!
 We provide you an sample code which was not did the fully test using Java Language. Once I found the best method for this problems, I will update the record of this repositary.
