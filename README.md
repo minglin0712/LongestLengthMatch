@@ -15,24 +15,24 @@ As we all know about the procedure to find the greedy method of the problems. Th
 We could transfer it to the psuedo code below.
 
     LongestMatch(Point start, Point end, List<List<Point>> array)
-    if(start = end) return 0
-    if(start is last) return getLongestLengthFromTraversalArrays
-    
-    for(check by the each of translate points)
-      List traversalPath = getTraversal(start, end, translatePoint, traversalPath);
-      if(array dosen't contains the list)
-          array.add(traversalPath)
-
-    Go to the next checked points
-    LongestMatch(start, end, array)
+    1 if(start = end) return 0
+    2 if(start is last) return getLongestLengthFromTraversalArrays
+    3 
+    4 for(check by the each of translate points)
+    5   List traversalPath = getTraversal(start, end, translatePoint, traversalPath);
+    6   if(array dosen't contains the list)
+    7       array.add(traversalPath)
+    8
+    9  Go to the next checked points
+    10 LongestMatch(start, end, array)
     
     getTraversal(start, end, translatePoint, traversalPath)
-    nextPoint = start.translate(translatePoint)
-    if(nextPoint were not out of boundary)
-        if(the value of nextPoint of array was '1')
-        add the current point to the traversalPath
-        recursive to did getTraversal(nextPoint, end, translatePoint, traversalPath)
-    return the traversalPath
+    1 nextPoint = start.translate(translatePoint)
+    2 if(nextPoint were not out of boundary)
+    3     if(the value of nextPoint of array was '1')
+    4     add the current point to the traversalPath
+    5     recursive to did getTraversal(nextPoint, end, translatePoint, traversalPath)
+    6 return the traversalPath
   
 Finally, if we consider all the possible edge cases once we complete all the coding work, it will works as we hope!
 We provide you an sample code which was not did the fully test using Java Language. Once I found the best method for this problems, I will update the record of this repositary.
