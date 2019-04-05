@@ -14,7 +14,7 @@ As we all know about the procedure to find the greedy method of the problems. Th
 
 We could transfer it to the psuedo code below.
 
-LongestMatch(Point start, Point end, List<List<Point>> array)
+    LongestMatch(Point start, Point end, List<List<Point>> array)
     if(start = end) return 0
     if(start is last) return getLongestLengthFromTraversalArrays
     
@@ -26,8 +26,7 @@ LongestMatch(Point start, Point end, List<List<Point>> array)
     Go to the next checked points
     LongestMatch(start, end, array)
     
-getTraversal(start, end, translatePoint, traversalPath)
-    
+    getTraversal(start, end, translatePoint, traversalPath)
     nextPoint = start.translate(translatePoint)
     if(nextPoint were not out of boundary)
         if(the value of nextPoint of array was '1')
