@@ -2,8 +2,10 @@
 How to find the longest length of the '1' sticks while given an n*n matrix which contains of '0' or '1'?
 
 This is one of the most interesting problems about features match searching in a matrix. Probably it will be the coding test for the interview at some of the companies such as Google, Facebook, Microsoft, Amazon...etc. Let's give you an example of the graph as the file example1. And there's the solution about the example1 named example1withAns.
+![alt text](example1.png)
 
 Like the grapch of example1, we could get the answer of length was 8.
+![alt text](example1withAns.png)
 
 Answer with Brute force method
 As we all know about the procedure to find the greedy method of the problems. The first step to start was use the simplest method to complete an prototype solution. Though I haven't had the solution for the best ways. there's a thought process using Brute Force I could provide to you.
